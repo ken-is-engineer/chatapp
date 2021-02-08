@@ -125,7 +125,7 @@
     justify-content: space-between;
   }
 
-    .side_username{
+    .side_username a{
       color: #FAFAFA;
       font-size: 16px;
       text-decoration: none;
