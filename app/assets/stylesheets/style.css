@@ -131,7 +131,7 @@
       text-decoration: none;
     }
 
-    .side_new{
+    .side_new a{
       color: deepskyblue;
       font-size: 10px;
       border: 1px solid lightblue;
