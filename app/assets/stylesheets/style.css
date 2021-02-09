@@ -89,7 +89,7 @@
         width: 100%;
       }
 
-      .form-image {
+      .form_image {
         font-size: 12px;
         background-color: lightblue;
         color: white;
@@ -107,7 +107,6 @@
       background-color: #38AEF0;
       color: white;
       font-size: 16px;
-      height: 100%;
       padding: 0 20px;
       border: none;
     }
@@ -147,7 +146,7 @@
     overflow: scroll;
   }
 
-    .side_list{
+    .side_list a{
       display: block;
       padding: 20px 0 40px;
       color: white;
