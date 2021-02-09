@@ -7,27 +7,16 @@
       <a href="AAA" class=chat_delete>チャットを削除する</a>
     </div>
   </div>
-  <div class=chat_view>
-    <div class=message_boxes>
-      <div class=message_box>
-        <div class=message_info>
-          <div class=message_name>Ken</div>
-          <div class=message_date>XX:XX:XX</div>
-       </div>
-        <div class=message>Hello,world!</div>
+    <div class=chat_view>
+      <div class=message_boxes>
+        <div class=message_box>
+          <%= render partial: "message", collection: @messages%>
+        </div>
       </div>
     </div>
-    <div class=message_box>
-      <div class=message_info>
-        <div class=message_name>John</div>
-        <div class=message_date>XX:XX:XX</div>
-      </div>
-      <div class=message>Hello,world?</div>
-    </div>
-  </div>
     <%= form_with model: [@room, @message], class: 'chat_form', local: true do |f| %>
       <div class='form'>
-        <%= f.text_field :content, class: 'form_message', placeholder: 'type a message' %>
+        <%= f.text_field :content, class: 'form_message', placeholder: 'type a message', autofocus: true %>
         <label class="form_image">
           <span class="image-file">画像</span>
           <%= f.file_field :image, class: 'hidden' %>
