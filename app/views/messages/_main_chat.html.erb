@@ -4,7 +4,7 @@
       <div class=chat_name><%= @room.name%></div>
     </div>
     <div class=header_right>
-      <a href="AAA" class=chat_delete>チャットを削除する</a>
+      <%= link_to "チャットを削除する", room_path(@room), method: :delete, class: "chat_delete"%>
     </div>
   </div>
     <div class=chat_view>
